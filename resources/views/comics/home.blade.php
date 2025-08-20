@@ -10,10 +10,7 @@
         <h2 class="current-series">CURRENT SERIES</h2>
         <div class="comics-grid">
             @foreach ($comics as $comic)
-            <div class="comic-card">
-                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
-                <h4>{{ strtoupper($comic['series']) }}</h4>
-            </div>
+            @include('components.comic-card', ['comic' => $comic])
             @endforeach
         </div>
         <div class="load-more">
