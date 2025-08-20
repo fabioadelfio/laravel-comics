@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1c1c1c;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background: white;
+    display: flex;
+    align-items: center;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li {
+        padding: 70px 0;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.active {
+        color: #0282f9;
+        border-bottom: 10px solid #0282f9;
+        padding-bottom: 60px;
+}
+
+.jumbotron {
+    height: 400px;
+}
+
+.jumbotron img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.comics {
+    translate: 0 -70px;
+    padding: 40px 0;
+    .comics-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+
+        .comic-card {
+            img { width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+            h4 { margin-top: 10px; font-size: 14px; }
+        }
+    }
+    .load-more {
+        text-align: center;
+        margin-top: 30px;
+
+        button {
+            background: #0282f9;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+.current-series {
+    background-color: #0282f9;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background-size: auto;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.merchandise {
+    background-color: #0282f9;
+    padding: 40px 0;
+}
+
+.merchandise-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.merch-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.merch-item img {
+    height: 75px;
+}
+
+footer {
+  background-color: #303030;
+  color: white;
+
+  .footer-top {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    padding: 40px 0;
+    position: relative;
+
+    .links {
+      display: flex;
+      gap: 40px;
+
+      .col h4 {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px;
+
+        li a {
+          color: #959595;
+          text-decoration: none;
+          font-size: 12px;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .logo-bg {
+      position: absolute;
+      right: 100px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.8;
+
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     position: relative;
+  z-index: 1;  // sopra il logo
+
+    button {
+      background: transparent;
+      border: 2px solid #0282f9;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      span {
+        color: #0282f9;
+        font-weight: bold;
+      }
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

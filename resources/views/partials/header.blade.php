@@ -9,7 +9,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Characters</a></li>
-                    <li><a href="{{ route('comics.home') }}">Comics</a></li>
+                    <li><a class="active" href="{{ route('comics.home') }}">Comics</a></li>
                     <li><a href="#">Movies</a></li>
                     <li><a href="#">TV</a></li>
                     <li><a href="#">Games</a></li>
