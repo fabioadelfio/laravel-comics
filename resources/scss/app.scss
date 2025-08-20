@@ -176,8 +176,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-     position: relative;
-  z-index: 1;  // sopra il logo
+    position: relative;
+    z-index: 1;
 
     button {
       background: transparent;
@@ -214,4 +214,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.current-characters {
+    text-align: center;
+    margin: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.current-movies {
+    text-align: center;
+    margin: 200px 0;
+    position: relative;
+    z-index: 1;
 }
